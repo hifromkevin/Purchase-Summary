@@ -1,0 +1,35 @@
+.pos-border {
+  border: 2px solid #efefef;
+  border-radius: 15px;
+  padding: 2% 4%;
+  box-shadow: 0px 3px #efefef;
+}
+
+.title-height {
+  margin-bottom: 25px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.savings {
+  color: #f00;
+}
+
+.totals {
+  font-weight: bold;
+}
+
+.plus span:first-child {
+  top: 6px;
+}
+
+.plus span:nth-child(2) {
+  transform: rotate(90deg);
+  width: 20px;
+  top: 10px;
+  left: 25px;
+}
+
+.plus-open 
