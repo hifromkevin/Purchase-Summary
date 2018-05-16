@@ -23,10 +23,12 @@ const ItemDetails = ({productInfo, detailsPlusClick}) => (
         </div>
         <div className="row">
           <div className="col-6">
-            <div className="row"><p className="bold-text">${productInfo.price}</p></div>
-            <div className="row"><p className="old-price bold-text">${productInfo.originalPrice}</p></div>
+            <div className="row">
+              <span className="bold-text">${productInfo.price}</span><br />
+              <span className="old-price bold-text">${productInfo.originalPrice}</span>
+            </div>
           </div>
-          <div className="col-6">Qty: {productInfo.quantity}</div>
+          <div className="col-6"><p className="bold-text">Qty: {productInfo.quantity}</p></div>
         </div>
       </div>
     </div>

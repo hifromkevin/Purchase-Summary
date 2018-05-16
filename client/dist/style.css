@@ -49,6 +49,48 @@ input {
   text-decoration: line-through;
 }
 
+/***********************
+ ***     TOOLTIP     ***
+ ***********************/
+
+ .tooltip-highlight {
+    position: relative;
+}
+
+.tooltip-highlight .tooltip-content {
+  visibility: hidden;
+  width: 200px;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  padding: 8%;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 30%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.85em;
+}
+
+.tooltip-highlight .tooltip-content:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 30%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #efefef transparent;
+}
+
+.tooltip-highlight:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
 /************************
  *** SHOW / HIDE INFO ***
  ************************/
