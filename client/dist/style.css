@@ -17,6 +17,10 @@ input {
  ***    NEW STYLES    ***
  ************************/
 
+.bold-text {
+  font-weight: bold;
+}
+
 .pos-border {
   border: 2px solid #efefef;
   border-radius: 15px;
@@ -38,6 +42,11 @@ input {
 
 .totals {
   font-weight: bold;
+}
+
+.old-price {
+  color: #cfcfcf;
+  text-decoration: line-through;
 }
 
 /************************
