@@ -1,3 +1,22 @@
+/************************
+ ***      RESETS      ***
+ ************************/
+
+a, a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid #efefef;
+  padding: 2%;
+}
+
+/************************
+ ***    NEW STYLES    ***
+ ************************/
+
 .pos-border {
   border: 2px solid #efefef;
   border-radius: 15px;
@@ -21,15 +40,48 @@
   font-weight: bold;
 }
 
-.plus span:first-child {
-  top: 6px;
+/************************
+ *** SHOW / HIDE INFO ***
+ ************************/
+
+.details-plus span {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  width: 15px;
+  height: 1.5px;
+  background: #000;
+  right: 48%;
 }
 
-.plus span:nth-child(2) {
+.details-plus span:first-child {
+  top: 11px;
+}
+
+.details-plus span:nth-child(2) {
   transform: rotate(90deg);
-  width: 20px;
-  top: 10px;
-  left: 25px;
+  top: 11px;
 }
 
-.plus-open 
+.promo-plus span {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  width: 15px;
+  height: 1.5px;
+  background: #000;
+  right: 42%;
+}
+
+.promo-plus span:first-child {
+  top: 11px;
+}
+
+.promo-plus span:nth-child(2) {
+  transform: rotate(90deg);
+  top: 11px;
+}
+
+.hideme {
+  display: none !important;
+}
